@@ -44,6 +44,7 @@ function total() {
 
 function removeFromCart(item) {
   // write your code here
+  Boolean inCart = false
   for(var i = 0; i < cart.length; i++) {
     if(cart[i].itemName === item) {
       cart.pop(cart[i])

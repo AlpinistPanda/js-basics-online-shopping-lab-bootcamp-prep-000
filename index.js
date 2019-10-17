@@ -23,7 +23,7 @@ function viewCart() {
     str = "Your shopping cart is empty."
   }
   else if(cart.length === 1) {
-    str = str + cart[0].itemName + " at $" + cart[0].itemPrice + (i< cart.length - 1 ? ", " : ".");
+    str = str + cart[0].itemName + " at $" + cart[0].itemPrice + ".";
   }
   else {
   for(var i = 0; i < cart.length; i++) {
@@ -35,6 +35,11 @@ function viewCart() {
 
 function total() {
   // write your code here
+  var total = 0
+    for(var i = 0; i < cart.length; i++) {
+    total = total + cart[i].itemPrice
+  }
+  return total
 }
 
 function removeFromCart(item) {

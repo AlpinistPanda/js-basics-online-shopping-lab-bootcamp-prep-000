@@ -25,6 +25,7 @@ function viewCart() {
   for(var i = 0; i < cart.length; i++) {
     str = str + cart[i].itemName + " at $" + cart[i].itemPrice + (i< cart.length - 1 ? ", " : "");
   }
+  return str
 }
 
 function total() {

@@ -51,7 +51,7 @@ function removeFromCart(item) {
       inCart = true
     }
   }
-  return inCart ? cart: ""
+  return inCart ? cart: "That item is not in your cart."
 }
 
 function placeOrder(cardNumber) {

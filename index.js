@@ -47,7 +47,7 @@ function removeFromCart(item) {
   var inCart = false
   for(var i = 0; i < cart.length; i++) {
     if(cart[i].itemName === item) {
-      cart.pop(cart[i])
+      cart.splice(i, 1); 
       inCart = true
     }
   }
